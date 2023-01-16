@@ -1,0 +1,333 @@
+:root {
+  --blue: rgb(194, 188, 188);
+}
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: content-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: top;
+}
+.fa-solid {
+  position: absolute;
+  margin-top: 505px;
+  margin-left: 240px;
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--blue);
+}
+.full-bill {
+  box-sizing: border-box;
+  height: 11in;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 8.5in;
+}
+.full-bill {
+  background: #fff;
+  border-radius: 1px;
+  border: 1px solid var(--blue);
+  border-radius: 15px;
+}
+header {
+  display: flex;
+  gap: 25px;
+  justify-content: first baseline;
+  align-items: center;
+}
+header img {
+  padding: 5px;
+}
+header address {
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 550px;
+}
+header address h1 {
+  font-size: 35px;
+  color: red;
+}
+header address p {
+  font-size: 14px;
+  color: blueviolet;
+}
+*[contenteditable] {
+  min-width: 1em;
+  outline: 0;
+}
+
+*[contenteditable] {
+  cursor: pointer;
+}
+span[contenteditable] {
+  display: inline-block;
+}
+.gstin {
+  border: 1px solid var(--blue);
+  padding: 5px;
+  width: 850px;
+  text-align: center;
+}
+article {
+  height: 150px;
+  width: 850px;
+  border: 1px solid var(--blue);
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+article div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+article address {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 200px;
+  padding: 10px;
+  font-style: normal;
+}
+article div span {
+  width: 95%;
+  padding-top: 5px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  border-top: 1px solid rgb(194, 188, 188);
+}
+article aside .invoice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--blue);
+  width: 350px;
+  height: 50px;
+  border-top: none;
+}
+article aside .no-and-date {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  border: 1px solid var(--blue);
+  width: 350px;
+  height: 100px;
+  border-bottom: none;
+  border-top: none;
+  padding-left: 10px;
+}
+section span.despatch {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border: 1px solid var(--blue);
+}
+section span .to {
+  margin-left: 280px;
+}
+section table.meta {
+  height: min-content;
+  border-collapse: collapse;
+  width: 815px;
+}
+section table.meta thead th {
+  height: 30px;
+}
+section table.meta tbody td {
+  border: 1px solid rgb(194, 188, 188);
+  height: 30px;
+  text-align: center;
+  padding-top: 3px;
+}
+section table.meta thead th .no {
+  width: 50px;
+  border: none;
+}
+section table.meta thead th .particulars {
+  width: 278px;
+  border: none;
+}
+section table.meta thead th .hsn-code {
+  width: 100px;
+  border: none;
+}
+section table.meta thead th .quantity {
+  width: 80px;
+  border: none;
+}
+section table.meta thead th .rate {
+  width: 60px;
+  border: none;
+}
+section table.meta thead th .per {
+  width: 60px;
+  border: none;
+}
+section table.meta thead th .amount {
+  width: 100px;
+  border: none;
+}
+section table.meta tbody td .no {
+  width: 50px;
+  text-align: center;
+}
+section table.meta tbody td .particulars {
+  width: 278px;
+  text-align: left;
+}
+section table.meta tbody td .hsn-code {
+  width: 100px;
+  vertical-align: top;
+}
+section table.meta tbody td .quantity {
+  width: 80px;
+  text-align: center;
+}
+section table.meta tbody td .rate {
+  width: 60px;
+  text-align: center;
+}
+section table.meta tbody td .per {
+  width: 60px;
+  text-align: center;
+}
+section table.meta tbody td .amount {
+  width: 100px;
+  text-align: center;
+}
+section .bank-details {
+  border: 1px solid var(--blue);
+  height: 250px;
+  display: flex;
+  border-top: none;
+}
+section .bank-details span.no {
+  border: 1px solid var(--blue);
+  width: 56px;
+  border-right: none;
+}
+section .bank-details span.bankDetails {
+  border: 1px solid var(--blue);
+  width: 308px;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 10px;
+}
+section .bank-details span.gstDetails {
+  border: 1px solid var(--blue);
+  width: 336px;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 23px;
+  padding-left: 10px;
+}
+section .bank-details span.totalAmount {
+  border: 1px solid var(--blue);
+  border-right: none;
+  width: 109px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
+}
+section .bank-details span.totalAmount div.div1 {
+  margin-top: 9px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+section .bank-details span.totalAmount div.div2 {
+  margin-bottom: 50px;
+  border: 1px solid var(--blue);
+  width: 99px;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.items-row td i {
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+#plus {
+  top: -35px;
+}
+
+#minus {
+  opacity: 0.1;
+  margin-top: 5px;
+}
+
+#minus:hover {
+  opacity: 1;
+}
+footer {
+  border: 1px solid var(--blue);
+  height: 40px;
+  display: flex;
+}
+footer span.amounts-of-words {
+  padding: 10px;
+  height: 70px;
+  width: 450px;
+}
+footer span.amounts-of-label {
+  padding: 10px;
+  width: 225px;
+}
+footer span.amounts-of-total {
+  padding: 10px;
+  width: 70px;
+}
+footer.footer {
+  height: 140px;
+  display: flex;
+  align-items: flex-end;
+  border: none;
+}
+footer span.bussiness-terms {
+  font-style: italic;
+}
+footer span.for-bill {
+  margin-left: 150px;
+  color: rgb(214, 106, 106);
+}
+
+@media print {
+  .full-bill {
+    height: 100%;
+  }
+  #minus,
+  #plus {
+    display: none;
+  }
+}

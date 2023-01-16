@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REC FOUNDRY</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Crimson+Text&family=Fira+Sans&family=Flow+Circular&family=Hind:wght@500&family=Kenia&family=Nerko+One&family=Nunito&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono:ital,wght@1,300&family=Roboto+Slab&family=Rubik&family=Rubik+80s+Fade&family=Rubik+Gemstones&family=Rubik+Storm&family=Rubik+Vinyl&family=Sofia+Sans+Extra+Condensed:ital,wght@0,500;1,500&family=Source+Sans+Pro&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/billing-front-end/style.css" />
+  </head>
+  <script
+    src="https://kit.fontawesome.com/c50248ff4f.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <i class="fa-solid fa-square-plus" id="plus"></i>
+    <div class="full-bill">
+      <header>
+        <img src="/billing-front-end/Image/Ganesh-log.jpg" alt="" />
+        <address>
+          <h1>REC FOUNDRY</h1>
+          <p>MFRS.OF:PUMP SPARES</p>
+          <p>H.O:13-D,COSMATFAN FOUNDRY CLUSTER III,MANICKAMPALAYAM,</p>
+          <p>COIMBATORE - 641107.CELL:9842210202,9842810209</p>
+          <p>BRANCH:S.F.NO.18/2K.K.NAGAR,BHARATHI NAGAR-4TH STREET</p>
+          <p>EXTN,GANAPATHY,</p>
+          <p>COIMBATORE-641006.</p>
+        </address>
+      </header>
+      <span contenteditable class="gstin">GSTIN:33AGIPR9804RIZK</span>
+      <article>
+        <div>
+        <address contenteditable>
+          <p>SSP Engineering Industries,</p>
+          <p>205-I Elango Nager,</p>
+          <p>Avaram Palayam,</p>
+          <p>Coimbatore.</p>
+          <p>Coimbatore.</p>
+        </address>
+        <span contenteditable>GST NO: 33CBWPP1299MIZP</span>
+      </div>
+        <aside>
+          <span class="invoice">INVOICE</span>
+          <span class="no-and-date">
+            <p>BILL NO:<span contenteditable>5</span></p>
+            <p>DATE:<span contenteditable>30-06-2022</span></p>
+          </span>
+        </aside>
+      </article>
+      <section>
+        <span class="despatch">
+          <p>Despatchthrough</p>
+          <p class="to">To</p>
+        </span>
+        <table class="meta">
+          <thead>
+            <tr>
+              <th><span contenteditable="false" class="no">No</span></th>
+              <th>
+                <span contenteditable="false" class="particulars"
+                  >Particulars</span
+                >
+              </th>
+              <th>
+                <span contenteditable="false" class="hsn-code">HSN Code</span>
+              </th>
+              <th>
+                <span contenteditable="false" class="quantity">Quantity</span>
+              </th>
+              <th><span contenteditable="false" class="rate">Rate</span></th>
+              <th><span contenteditable="false" class="per">Per</span></th>
+              <th>
+                <span contenteditable="false" class="amount">Amount</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="items-row">
+              <td><span contenteditable class="no item-data"></span></td>
+              <td>
+                <span contenteditable class="particulars item-data"></span>
+              </td>
+              <td><span contenteditable class="hsn-code item-data"></span></td>
+              <td><span contenteditable id="item-quantity" class="quantity item-data"></span></td>
+              <td><span contenteditable id="item-price"  class="rate item-data"></span></td>
+              <td><span contenteditable class="per item-data"></span></td>
+              <td><span contenteditable id="item-amount" class="amount item-data"></span></td>
+              <td><i class="fa-solid fa-square-minus" id="minus"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="bank-details">
+          <span class="no"></span>
+          <span class="bankDetails">
+            <p>Bank Name : KARUR VYSYA</p>
+            <p>Bank Branch : GANAPATHY</p>
+            <p>A/C No :1270135000012564</p>
+            <p>IFS Code : KVBL0001270</p>
+            <p>E-mail :recfoundry@gmail.com</p>
+          </span>
+          <span class="gstDetails">
+            <p>Sale Value</p>
+            <p>Discount@ 0%</p>
+            <p>Taxable Amount</p>
+            <p>CGST@9%</p>
+            <p>SGST@9%</p>
+            <p style="color: red">
+              <span>GST AMOUNT: </span>
+              <span>0000.00</span></p>
+          </span>
+          <span class="totalAmount">
+            <div class="div1">
+              <p>00000.00</p>
+              <p>0</p>
+            </div>
+            <div class="div2">
+              <p>0000.00</p>
+              <p>0000.00</p>
+            </div>
+          </span>
+        </div>
+      </section>
+      <footer>
+        <span class="amounts-of-words"> </span>
+        <span class="amounts-of-label"> BILL AMOUNT </span>
+        <span class="amounts-of-total">00000.00</span>
+      </footer>
+      <footer class="footer">
+        <span class="bussiness-terms">BusinessTerms:Good sonce sold will not be takback. <br>
+        Please pay by A/C draftor cheque
+        </span>
+        <span class="for-bill">
+          FOR REC FOUNDRY
+        </span>
+      </footer>
+    </div>
+    <script src="/billing-front-end/script.js"></script>
+  </body>
+</html>
