@@ -116,12 +116,12 @@ article aside .invoice {
 article aside .no-and-date {
   display: flex;
   align-items: left;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
-  gap: 25px;
+  gap: 10px;
   border: 1px solid var(--blue);
   width: 350px;
-  height: 100px;
+  height: 90px;
   border-bottom: none;
   border-top: none;
   padding-left: 10px;
@@ -166,15 +166,15 @@ section table.meta thead th .quantity {
   border: none;
 }
 section table.meta thead th .rate {
-  width: 60px;
+  width: 110px;
   border: none;
 }
 section table.meta thead th .per {
-  width: 60px;
+  width: 20px;
   border: none;
 }
 section table.meta thead th .amount {
-  width: 100px;
+  width: 140px;
   border: none;
 }
 section table.meta tbody td .no {
@@ -194,15 +194,15 @@ section table.meta tbody td .quantity {
   text-align: center;
 }
 section table.meta tbody td .rate {
-  width: 60px;
+  width: 100px;
   text-align: center;
 }
 section table.meta tbody td .per {
-  width: 60px;
+  width: 50px;
   text-align: center;
 }
 section table.meta tbody td .amount {
-  width: 100px;
+  width: 140px;
   text-align: center;
 }
 section .bank-details {
@@ -213,13 +213,17 @@ section .bank-details {
 }
 section .bank-details span.no {
   border: 1px solid var(--blue);
-  width: 56px;
+  width: 48px;
   border-right: none;
+  border-top: none;
+  border-bottom: none;
 }
 section .bank-details span.bankDetails {
   border: 1px solid var(--blue);
-  width: 308px;
+  width: 268px;
   border-right: none;
+  border-top: none;
+  border-bottom: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -228,18 +232,22 @@ section .bank-details span.bankDetails {
 }
 section .bank-details span.gstDetails {
   border: 1px solid var(--blue);
-  width: 336px;
+  width: 330px;
   border-right: none;
+  border-top: none;
+  border-bottom: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 23px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 section .bank-details span.totalAmount {
   border: 1px solid var(--blue);
   border-right: none;
-  width: 109px;
+  border-top: none;
+  border-bottom: none;
+  width: 145px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -257,11 +265,10 @@ section .bank-details span.totalAmount div.div1 {
 section .bank-details span.totalAmount div.div2 {
   margin-bottom: 50px;
   border: 1px solid var(--blue);
-  width: 99px;
+  width: 136px;
   border-bottom: none;
   border-right: none;
   border-left: none;
-
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -290,9 +297,21 @@ section .bank-details span.totalAmount div.div2 {
 #minus:hover {
   opacity: 1;
 }
+#search {
+  position: absolute;
+  margin-left: 945px;
+  top: -190px;
+}
+.searchInput {
+  position: absolute;
+  margin-left: 770px;
+  margin-top: 310px;
+  height: 25px;
+  padding-left: 10px;
+}
 footer {
   border: 1px solid var(--blue);
-  height: 40px;
+  height: 90px;
   display: flex;
 }
 footer span.amounts-of-words {
@@ -306,10 +325,10 @@ footer span.amounts-of-label {
 }
 footer span.amounts-of-total {
   padding: 10px;
-  width: 70px;
+  width: 100px;
 }
 footer.footer {
-  height: 140px;
+  height: 50px;
   display: flex;
   align-items: flex-end;
   border: none;
@@ -321,13 +340,34 @@ footer span.for-bill {
   margin-left: 150px;
   color: rgb(214, 106, 106);
 }
-
+.print-button, .create-button {
+  background-color: var(--blue);
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  margin: 25px;
+}
+div.actions{
+display: flex;
+flex-direction: row;
+width: 300px;
+height: 100px;
+margin-left: 800px;
+}
+.print-button:hover, .create-button:hover {
+  background-color: cadetblue;
+  cursor: pointer;
+}
 @media print {
   .full-bill {
     height: 100%;
   }
   #minus,
-  #plus {
+  #plus,
+  #search,
+  .searchInput,
+  .print-button, .create-button {
     display: none;
   }
 }

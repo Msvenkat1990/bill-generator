@@ -16,6 +16,9 @@
     crossorigin="anonymous"
   ></script>
   <body>
+    
+    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+    <input type="search" class="searchInput" placeholder="search billNo">
     <i class="fa-solid fa-square-plus" id="plus"></i>
     <div class="full-bill">
       <header>
@@ -33,20 +36,21 @@
       <span contenteditable class="gstin">GSTIN:33AGIPR9804RIZK</span>
       <article>
         <div>
-        <address contenteditable>
-          <p>SSP Engineering Industries,</p>
-          <p>205-I Elango Nager,</p>
-          <p>Avaram Palayam,</p>
-          <p>Coimbatore.</p>
-          <p>Coimbatore.</p>
+          <p style="margin-left: 10px;">Address</p>
+        <address contenteditable class="custmer_address">
+          SSP Engineering Industries,
+          205-I Elango Nager,
+          Avaram Palayam,
+          Coimbatore.
+          Coimbatore.
         </address>
-        <span contenteditable>GST NO: 33CBWPP1299MIZP</span>
+        <span>GST NO<p contenteditable class="custmer_gtsno"></p></span>
       </div>
         <aside>
           <span class="invoice">INVOICE</span>
           <span class="no-and-date">
-            <p>BILL NO:<span contenteditable>5</span></p>
-            <p>DATE:<span contenteditable>30-06-2022</span></p>
+            <p>BILL NO: <span contenteditable class="billNo"></span></p>
+            <p>DATE: <span contenteditable class="date"></span></p>
           </span>
         </aside>
       </article>
@@ -79,15 +83,15 @@
           </thead>
           <tbody>
             <tr class="items-row">
-              <td><span contenteditable class="no item-data"></span></td>
+              <td><span contenteditable class="no item-data product" id="serialNo"></span></td>
               <td>
-                <span contenteditable class="particulars item-data"></span>
+                <span contenteditable id="item-particulars" class="particulars item-data product"></span>
               </td>
-              <td><span contenteditable class="hsn-code item-data"></span></td>
-              <td><span contenteditable id="item-quantity" class="quantity item-data"></span></td>
+              <td><span contenteditable id="item-hsn-code" class="hsn-code item-data product"></span></td>
+              <td><span contenteditable id="item-quantity" class="quantity item-data product"></span></td>
               <td><span contenteditable id="item-price"  class="rate item-data"></span></td>
-              <td><span contenteditable class="per item-data"></span></td>
-              <td><span contenteditable id="item-amount" class="amount item-data"></span></td>
+              <td><span contenteditable class="per item-data product"></span></td>
+              <td class="row-total"><span contenteditable id="item-amount" class="amount item-data product"></span></td>
               <td><i class="fa-solid fa-square-minus" id="minus"></i></td>
             </tr>
           </tbody>
@@ -109,11 +113,11 @@
             <p>SGST@9%</p>
             <p style="color: red">
               <span>GST AMOUNT: </span>
-              <span>0000.00</span></p>
+              <span class="totalGst">0000.00</span></p>
           </span>
           <span class="totalAmount">
             <div class="div1">
-              <p>00000.00</p>
+              <p class="salesValue">00000.00</p>
               <p>0</p>
             </div>
             <div class="div2">
@@ -129,13 +133,17 @@
         <span class="amounts-of-total">00000.00</span>
       </footer>
       <footer class="footer">
-        <span class="bussiness-terms">BusinessTerms:Good sonce sold will not be takback. <br>
-        Please pay by A/C draftor cheque
+        <span class="bussiness-terms">Business Terms: Goods once sold will not be taken back. <br>
+        Please pay by A/C draft or cheque
         </span>
         <span class="for-bill">
           FOR REC FOUNDRY
         </span>
       </footer>
+    </div>
+    <div class="actions">
+      <button class="create-button">Create Bill</button>
+      <button class="print-button">Print</button>
     </div>
     <script src="/billing-front-end/script.js"></script>
   </body>
